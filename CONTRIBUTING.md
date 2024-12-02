@@ -13,7 +13,7 @@ If you want to contribute a bug fix or feature to lurk, here's how to proceed:
 
 ## Pull Request reviews
 
-The maintainers will review your pull request as soon as they can, and it can only be merged once it has at least one approval . The comments can be in several forms:
+The maintainers will review your pull request as soon as they can, and it can only be merged once it has at least one approval. The comments can be in several forms:
 
 - 'Comment' usually indicates the reviewer doesn't yet commit to approving your code but has important remarks to contribute.
 - 'Request Changes' means changes need to be made before the reviewer approves at all.
@@ -26,7 +26,7 @@ The maintainers will review your pull request as soon as they can, and it can on
 A pull-request must meet certain criteria before it can be merged.
 
 1. If you are fine with a squash merge, your pull-request's final commit should have at least one approval from a reviewer, and from all maintainers listed in the .github/CODEOWNERS file for the touched code sections.
-2. If you prefer a classic merge, the pull-request should meet the above conditions, and and it should be a fast-forward merge from main, which implies it must also be up-to-date.
+2. If you prefer a classic merge, the pull-request should meet the above conditions, and it should be a fast-forward merge from main, which implies it must also be up-to-date.
 
 **Warning:** An up-to-date, rebased branch is required for a fast-forward merge. This means that your branch should not contain any merge commits: while we do not object to `Merge` as a pull-request merge method, we prefer the pull-request's history to be linear. To achieve this, you can update your local branch with `git pull --rebase` (see [doc](https://www.git-scm.com/docs/git-pull)).
 
