@@ -19,14 +19,14 @@ bincode = { workspace = true }
 bytecount = "0.6.7"
 camino = { workspace = true, features = ["serde1"] }
 clap = { workspace = true, features = ["derive"] }
-config = "0.14.0"
+config = "0.15.8"
 dashmap = "6.0.1"
 ff = { workspace = true }
 fxhash = "0.2.1"
 generic-array = "1.0"
 hex = { version = "0.4.3", features = ["serde"] }
 indexmap = { version = "2.1.0", features = ["rayon", "serde"] }
-itertools = "0.13"
+itertools = "0.14"
 lurk-macros = { version = "0.2.0", path = "lurk-macros" }
 lurk-metrics = { version = "0.2.0", path = "lurk-metrics" }
 neptune = { workspace = true, features = ["arity2", "arity4", "arity8", "arity16", "pasta"] }
@@ -41,15 +41,15 @@ once_cell = { workspace = true }
 pairing = { workspace = true }
 pasta_curves = { workspace = true, features = ["repr-c", "serde"] }
 rand = { workspace = true }
-rand_core = { version = "0.6.4", default-features = false }
-rand_xorshift = "0.3.0"
+rand_core = { version = "0.9.0", default-features = false }
+rand_xorshift = "0.4.0"
 rayon = "1.7.0"
-rustyline-derive = "0.10"
+rustyline-derive = "0.11"
 serde = { workspace = true, features = ["derive"] }
 serde_bytes = "0.11.12"
 serde_json = { workspace = true }
 serde_repr = "0.1.14"
-strum = { version = "0.26", features = ["derive"] }
+strum = { version = "0.27", features = ["derive"] }
 tap = "1.0.1"
 stable_deref_trait = "1.2.0"
 thiserror = { workspace = true }
@@ -65,7 +65,7 @@ tracing-texray = { workspace = true }
 tracing-subscriber = { workspace = true, features = ["env-filter"] }
 elsa = { version = "1.9.0", git = "https://github.com/argumentcomputer/elsa", branch = "sync_frozen", features = ["indexmap"] }
 arc-swap = "1.6.0"
-halo2curves = { version = "0.6.0", features = ["bits", "derive_serde"] }
+halo2curves = { version = "0.8.0", features = ["bits", "derive_serde"] }
 
 [target.'cfg(not(target_arch = "x86_64"))'.dependencies]
 nova = { workspace = true }
@@ -73,10 +73,10 @@ nova = { workspace = true }
 nova = { workspace = true, features = ["asm"] }
 
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
-pprof = { version = "0.13", optional = true} # only used in tests, under feature "flamegraph"
+pprof = { version = "0.14", optional = true} # only used in tests, under feature "flamegraph"
 proptest = { workspace = true }
 proptest-derive = { workspace = true }
-rand = "0.8.5"
+rand = "0.9.0"
 rustyline = { version = "14.0", features = [
     "derive",
     "with-file-history",
@@ -84,7 +84,7 @@ rustyline = { version = "14.0", features = [
 home = "0.5.5"
 
 [target.'cfg(target_arch = "wasm32")'.dependencies]
-getrandom = { version = "0.2", features = ["js"] }
+getrandom = { version = "0.3", features = ["js"] }
 rustyline = { version = "14.0", features = ["derive"], default-features = false }
 
 [dev-dependencies]
@@ -131,7 +131,7 @@ pairing = { version = "0.23" }
 pasta_curves = { version = "0.5.0" }
 proptest = "1.2.0"
 proptest-derive = "0.5.0"
-rand = "0.8"
+rand = "0.9"
 serde = "1.0"
 serde_json = { version = "1.0" }
 tempfile = "3.6.0"
